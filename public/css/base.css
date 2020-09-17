@@ -1,0 +1,73 @@
+/**
+ * Css file for Booking app base styling
+ */
+body {
+    background-color: #FFFFFF;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #4CA5A5;
+}
+
+.content {
+    padding:  2em 6em;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #D9F8F8;
+    border-bottom: .25em solid #4CA5A5;
+    display: -webkit-flex;
+    display: flex;
+    height: 5em;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header-heading {
+    color: #4CA5A5;
+    float: left;
+    font-size: 2em;
+    font-weight: 700;
+    padding: .6em 0 1em 0;
+}
+
+.header-pic {
+    float: left;
+    height: 3em;
+    padding: 1em;
+    width: 3em;
+}
+
+.footer {
+    background-color: #D9F8F8;
+    border-top: .25em solid #4CA5A5;
+    bottom: 0;
+    display: block;
+    height: 2.5em;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footer-text {
+    color: #4CA5A5;
+    font-size: 1em;
+    padding: .5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.footer-text a {
+    color: #4CA5A5;
+}
