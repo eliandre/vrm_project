@@ -9,17 +9,9 @@
 {% endblock %}
 
 {% block body %}
-    <div class="header">
-        <img src="/images/notebook.svg" class="header-pic">
-        <span class="header-heading">
-            Hotel Booking Application
-        </span>
-    </div>
+    {{ include('bookings/header.html.twig') }}
     <div class="content">
+        {% block content %}{% endblock %}
     </div>
-    <div class="footer">
-        <div class="footer-text">
-            Created by VSo19
-        </div>
-    </div>
+    {{ include('bookings/footer.html.twig') }}
 {% endblock %}
