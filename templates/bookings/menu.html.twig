@@ -1,0 +1,5 @@
+<div class="menu">
+    {% set currentUrl = app.request.pathinfo %}
+    <a class="menu-link {{ path('create_booking') == currentUrl ? 'active' }}" href="{{ path('create_booking') }}">Create booking</a>
+    <a class="menu-link {{ path('bookings') == currentUrl ? 'active' }}" href="{{ path('bookings') }}">All bookings</a>
+</div>

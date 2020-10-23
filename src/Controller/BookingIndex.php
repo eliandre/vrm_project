@@ -24,10 +24,11 @@ use Doctrine\ORM\EntityManagerInterface;
 class BookingIndex extends AbstractController
 {
     /**
-     * @Route("/create_booking")
+     * @Route("/", name="create_booking")
      */
     public function create_booking(Request $request)
     {
+        $this->generateUrl('create_booking');
         $form = $this->createFormBuilder()
             ->add('firstName', TextType::class, [
                 'required' => true
@@ -113,6 +114,7 @@ class BookingIndex extends AbstractController
      */
     public function bookings()
     {
+        $this->generateUrl('bookings');
         $repository = $this->getDoctrine()->getRepository(Bookings::class);
         $bookings = $repository->findAll();
         return $this->render('bookings/list.html.twig', ['bookings' => $bookings]);
